@@ -1,0 +1,16 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%button {
+  background-color: white;
+  cursor: pointer;
+  @extend %flex-center;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  &:hover {
+    background-color: #af7832;
+    color: white;
+  }
+}

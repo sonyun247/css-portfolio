@@ -1,0 +1,165 @@
+@import "/styles/reset.css";
+
+:root {
+  --color-light-beige: #f9f5f2;
+  --color-beige: #dfcdaa;
+  --color-brown: #b96f47;
+  --color-purple: #cca7ed;
+  --color-orange: #fc7b42;
+  --color-blue: #6c95cf;
+  --color-gold: #d4a336;
+  --color-khaki: #aca86a;
+  --color-green: #b4d5a3;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+
+header {
+  background-color: var(--color-light-beige);
+  height: 9vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.3vh 0.5vw;
+  h1 {
+    font-family: serif;
+    font-size: 8vh;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav {
+    justify-self: center;
+    ul {
+      display: flex;
+    }
+    li {
+      button {
+        height: 2.5vh;
+        width: 2.5vh;
+        margin: 0.2vw;
+        border-radius: 50%;
+        background-color: var(--color-beige);
+      }
+      &:nth-child(2) button {
+        background-color: var(--color-brown);
+      }
+      &:nth-child(3) button {
+        background-color: var(--color-purple);
+      }
+      &:nth-child(4) button {
+        background-color: var(--color-orange);
+      }
+      &:nth-child(5) button {
+        background-color: var(--color-blue);
+      }
+      &:nth-child(6) button {
+        background-color: var(--color-gold);
+      }
+      &:nth-child(7) button {
+        background-color: var(--color-khaki);
+      }
+      &:last-child button {
+        background-color: var(--color-green);
+      }
+    }
+  }
+  .header__info {
+    justify-self: end;
+    display: flex;
+    h3 {
+      font-size: 4vh;
+      font-weight: 300;
+      letter-spacing: 1.1;
+      text-transform: uppercase;
+    }
+    i {
+      font-size: 3vh;
+    }
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  article {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-beige);
+    &:nth-child(even) {
+      background-color: var(--color-blue);
+    }
+    &:nth-child(3n) {
+      background-color: var(--color-purple);
+    }
+    &:nth-child(3n - 1) {
+      background-color: var(--color-orange);
+    }
+    &:hover {
+      img {
+        display: none;
+      }
+      div {
+        height: 100%;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("../images/card.jpg");
+      }
+    }
+  }
+  img {
+    height: 70%;
+    align-self: center;
+  }
+  ul {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1vh 1vw;
+    display: flex;
+    justify-content: center;
+    li {
+      font-size: 0.9vw;
+      font-family: serif;
+      font-style: italic;
+      font-weight: 300;
+      width: 33%;
+      &:first-child {
+        display: flex;
+        justify-content: flex-start;
+      }
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+      }
+      &:nth-child(3) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

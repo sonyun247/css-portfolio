@@ -1,0 +1,26 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%paragraphFont {
+  line-height: 1.4;
+  font-size: 2.1em;
+}
+
+%titleFont {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+%button {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  width: 9em;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.7em;
+  border-radius: 20px;
+}

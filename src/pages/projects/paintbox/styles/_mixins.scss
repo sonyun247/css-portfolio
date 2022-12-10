@@ -1,0 +1,37 @@
+%nav {
+  display: flex;
+  align-items: center;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%view-font {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  margin-bottom: 10vh;
+  line-height: 1.2;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+%button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid black;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+    color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 0.5em;
+  text-align: center;
+  &:hover {
+    background-color: $buttonColor;
+    color: white;
+  }
+}

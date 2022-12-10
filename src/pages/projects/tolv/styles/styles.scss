@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Yrsa:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+@import "/styles/reset.css";
+@import "_variables";
+@import "_mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: $fixedTop;
+}
+header {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $fixedTop;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 7%;
+  background-color: white;
+  & > * {
+    align-self: center;
+    cursor: pointer;
+  }
+  ul {
+    display: flex;
+    li {
+      padding-right: 3vw;
+      font-size: 0.9em;
+      a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+  h1 {
+    font-family: "Yrsa";
+    font-size: 1.9em;
+    font-weight: 600;
+    @extend %flex-center;
+    div {
+      transform: rotateZ(-15deg);
+    }
+  }
+  i {
+    justify-self: flex-end;
+    font-size: 1.3em;
+  }
+}
+main {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100vh - $fixedTop;
+    .hero__img {
+      background-image: url("https://source.unsplash.com/random");
+    }
+    .hero__text {
+      @extend %flex-center;
+      flex-direction: column;
+      padding: 0 6vw;
+      p {
+        font-family: "Yrsa";
+        font-size: 3em;
+        font-weight: 500;
+        text-align: center;
+      }
+      span {
+        margin-top: 5vh;
+        font-size: 0.7em;
+        a {
+          color: $linkColor;
+          &:not(:nth-child(2)) {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .about {
+    @extend %flex-center;
+    flex-direction: column;
+    height: 66vh;
+    background-color: $aboutColor;
+    padding: 10vh 20vw;
+    font-family: "Yrsa";
+    h2 {
+      margin-top: 3vh;
+      font-size: 3em;
+      font-weight: 500;
+      margin-bottom: 2vh;
+    }
+    p {
+      font-size: 1.8em;
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 5vh;
+    }
+    span {
+      font-size: 0.8em;
+      a {
+        color: $linkColor;
+        font-weight: bold;
+      }
+    }
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 40vh;
+    gap: 1px;
+    .product {
+      background-position: center;
+      background-size: cover;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      &:nth-child(odd) {
+        background-image: url("https://source.unsplash.com/random/450x450");
+      }
+      &:nth-child(even) {
+        background-image: url("https://source.unsplash.com/random/450x451");
+      }
+      &:hover {
+        filter: blur(50px);
+      }
+      &:nth-child(1),
+      &:nth-child(5),
+      &:nth-child(7),
+      &:nth-child(10) {
+        grid-column-start: span 2;
+      }
+    }
+  }
+}
+footer {
+  height: 100vh;
+  padding: 10vh 14vw;
+  background-color: $footerColor;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .link-wrapper {
+    margin-top: 11vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.9;
+    span {
+      opacity: 0.5;
+    }
+    .sns {
+      margin-bottom: 5vh;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+  .right {
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: flex-end;
+    span {
+      font-size: 0.7em;
+    }
+    h1 {
+      font-family: "Yrsa";
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      font-size: 3em;
+      div {
+        transform: rotateZ(-15deg);
+      }
+    }
+  }
+}

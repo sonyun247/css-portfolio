@@ -1,54 +1,82 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
+# css-portfolio
 
-## 🚀 Quick start
+you can practice using the below link
 
-1.  **Create a Gatsby site.**
+## Flexbox
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+[Flexbox Froggy](https://flexboxfroggy.com)
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+- [x] flex-direction
+- [x] order
+- [x] justify-content
+- [x] align-items
+- [x] align-self
+- [x] flex-wrap
+- [x] align-content
+- [x] flex-grow
+- [x] flex-shrink
+- [x] flex-basis
 
-2.  **Start developing.**
+## Grid
 
-    Navigate into your new site’s directory and start it up.
+[Grid Garden](https://cssgridgarden.com)
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- [x] grid-template-columns
+- [x] grid-template-rows
+- [x] column-gap
+- [x] row-gap
+- [x] gap
+- [x] grid-template-areas
+- [x] grid-column-start
+- [x] grid-column-end
+- [x] grid-row-start
+- [x] grid-row-end
+- [x] grid-column
+- [x] grid-row
+- [x] grid-template
+- [x] justify-items
+- [x] align-items
+- [x] place-items
+- [x] justify-content
+- [x] align-content
+- [x] place-content
+- [x] justify-self
+- [x] align-self
+- [x] place-self
+- [x] grid-auto-rows
+- [x] grid-auto-flow
+- [x] grid-auto-columns
+- [x] repeat()
+- [x] fr
+- [x] minmax
+- [x] auto-fit
+- [x] auto-fill
+- [x] min-content
+- [x] max-content
 
-3.  **Open the code and start customizing!**
+## SCSS
 
-    Your site is now running at http://localhost:8000!
+- [x] Variables
+- [x] Nesting
+- [x] Partials
+- [x] Mixins
+- [x] Extend
+- [x] Responsive Mixins
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+* _FYI_
 
-4.  **Learn more**
+  [awesome scss mixins](https://github.com/colourgarden/awesome-scss)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+## To Clone:
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+- [x] [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
+- [x] [https://paint-box.com/](https://paint-box.com/)
+- [x] [http://10x19.co/](http://10x19.co/)
+- [x] [http://www.z-o-o.fr/](http://www.z-o-o.fr/)
+- [x] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
+- [x] [https://tolv.dk/](https://tolv.dk/)
+- [x] [https://rodicdavidson.co.uk/](https://rodicdavidson.co.uk/)
+- [x] [https://beige.de/](https://beige.de/)
+- [x] [http://donicaida.com/](http://donicaida.com/)
+- [x] [https://canalstreet.market/](https://canalstreet.market/)
+- [x] [https://wonhundred.com/](https://wonhundred.com/)

@@ -1,0 +1,67 @@
+@import "/styles/reset.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 8fr;
+}
+
+header h1 {
+  font-size: 5em;
+  padding-top: 2vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(min-content, max-content));
+  grid-auto-rows: minmax(max-content, 1fr);
+  font-weight: 300;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3vh 3vw;
+  line-height: 1.2;
+}
+main h2 {
+  font-size: 1em;
+}
+main span {
+  font-size: 0.5em;
+}
+
+div:first-child {
+  background-color: #bfbda7;
+}
+div:nth-child(3) {
+  background-color: #ff4715;
+}
+div:nth-child(5) {
+  background-color: #847e96;
+}
+div:nth-child(6) {
+  background-color: #d0ff71;
+}
+div:nth-child(7) {
+  background-color: #983433;
+}
+div:nth-child(8) {
+  background-color: #39a9fa;
+}
+div:nth-child(10) {
+  background-color: #41907b;
+}
+div:nth-child(12) {
+  background-color: #e3c4e5;
+}
+.image {
+  background-image: url("https://source.unsplash.com/random");
+  background-size: cover;
+  background-position: center;
+}

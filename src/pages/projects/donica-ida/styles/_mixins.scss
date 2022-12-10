@@ -1,0 +1,10 @@
+%grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 6fr 1fr;
+  padding: 1vh 0;
+}
+
+%smallFont {
+  font-size: var(--font-small);
+  font-family: sans-serif;
+}

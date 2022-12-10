@@ -1,0 +1,55 @@
+%borderStraight {
+  background-position: top, bottom, center top 10px, center bottom 10px;
+  background-image: linear-gradient(
+      to right,
+      var(--color-font) 50%,
+      transparent 0
+    ),
+    linear-gradient(to right, var(--color-font) 50%, transparent 0),
+    linear-gradient(to right, var(--color-font) 50%, transparent 0),
+    linear-gradient(to right, var(--color-font) 50%, transparent 0);
+  background-size: 30px 1px;
+  background-repeat: repeat-x;
+  animation: borderStraight 0.7s linear infinite;
+}
+
+%borderRound {
+  background-position: top, bottom, left, right;
+  background-image: linear-gradient(
+      to right,
+      var(--color-font) 50%,
+      transparent 0
+    ),
+    linear-gradient(to right, var(--color-font) 50%, transparent 0),
+    linear-gradient(to top, var(--color-font) 50%, transparent 0),
+    linear-gradient(to top, var(--color-font) 50%, transparent 0);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  animation-play-state: paused;
+  &:hover {
+    animation: borderRound 0.4s linear infinite;
+  }
+}
+
+%borderSlash {
+  background-position: top, bottom;
+  background-image: repeating-linear-gradient(
+      -70deg,
+      rgba(0, 0, 0, 0.2) 0 1px,
+      transparent 1px 4px
+    ),
+    repeating-linear-gradient(
+      -70deg,
+      rgba(0, 0, 0, 0.2) 0 1px,
+      transparent 1px 4px
+    );
+  background-size: 100% 2vh, 100% 2vh;
+  background-repeat: repeat-x;
+}
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
